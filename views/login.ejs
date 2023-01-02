@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Login Screen</title>
+  <link href="/css/style.css" rel="stylesheet"  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <h1>Login Screen</h1>
+  </header>
+    <div class="login">
+      <form method="POST" action="/login">
+        <br>
+        Username: <input type="text" name="username">
+        <br>
+        <br>
+        Password:  <input type="password" name="password">
+        <br>
+        <br>
+        <button class="loginBtns">
+          Login!
+        </button>
+        <br>
+        
+        <br>
+      </form>
+      <form action="/createAccount">
+        <button class="loginBtns">Join Now!</button>
+      </form>
+    </div>
+  
+    <% if (typeof error != "undefined" && error) { %>
+<h3  class = "error" style="color:red">Wrong Credentials</h3>
+  <% } %>
+  
+<%- include("partials/footer.ejs") %>
+</body>
+</html>

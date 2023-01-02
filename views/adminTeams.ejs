@@ -1,0 +1,28 @@
+<%- include("partials/adminMenu.ejs") %>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>  Team Battles </title>
+  <link href="/css/style.css" rel="stylesheet"  />
+</head>
+<body>
+
+  <h1> Teams Database </h1>
+
+<%  for (i=0; i < teams.length; i++) { %>
+    <div class="adminUser"> 
+      <h3 class="card-title" style="color:white">Team Name: <%= teams[i].name %></h3>
+      <h3 class="card-title" style="color:white">Team ID: <%= teams[i].teamId %> </h3>
+      <h3 class="card-title" style="color:white">User ID: <%= teams[i].userId %> </h3>
+      <h3 class="card-title" style="color:white">Team Size: <%= teams[i].size %></h3>
+      <a href="/updateTeam?id=<%=teams[i].teamId%>" class="card-title" style="color:white">Update</a>
+      <a href="/adminDeleteTeam?id=<%=teams[i].teamId%>" class="card-title" style="color:white">Delete</a>
+      <br>
+      <br>
+    </div>
+    <% } %>
+        
+  
+</body>

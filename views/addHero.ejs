@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Add Hero</title>
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+ <h1> Add a Hero </h1>
+
+  <div class="login">
+    <p>Search for hero:</p><input id="hero" type="text" name="hero">
+    <button class="searchHero" id="<%=teamInfo%>">Search</button>
+  </div>
+
+  <div id="heroInfo">
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

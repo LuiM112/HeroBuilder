@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lab 8: Admin Section</title>
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+ <h1> Create your Team</h1>
+
+  <div class="login">
+    <form method="POST" action="/createTeam">
+      Team Name:
+      <input type="text" name="name" placeholder="Enter Team Name">
+      <br><br>
+      <button class="loginBtns">Create Team</button>
+  </div>
+    
+  </form>
+</body>
+</html>

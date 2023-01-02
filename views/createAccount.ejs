@@ -1,0 +1,40 @@
+<%- include("partials/header.ejs") %>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hero Maker: Create Account</title>
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+ <h1> Create your Hero Maker Account </h1>
+
+  <div class="createAccount">
+  <form method="POST" action="/createAccount">
+    Username:
+    <input type="text" name="username" placeholder="Enter Username">
+    <br><br>
+    Password:
+    <input type="password" name="password" placeholder="Enter Password">
+    <br><br>
+    
+    Re-Type Password:
+    <input type="password" name="confirmPW" placeholder="Re-type Password">
+    <br><br>
+
+      
+    <button>Create Account</button>
+  </form>
+  </div>
+
+
+      <% if (typeof error2 != "undefined" && error2) { %>
+<h3  class = "error2" style="color:red">username is not available</h3>
+  <% } %>
+  
+    <% if (typeof error != "undefined" && error) { %>
+<h3  class = "error" style="color:red">Passwords do not match</h3>
+  <% } %>
+</body>
+</html>

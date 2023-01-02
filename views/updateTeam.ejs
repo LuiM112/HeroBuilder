@@ -1,0 +1,30 @@
+<%- include("partials/adminMenu.ejs") %>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title> Update Team </title>
+</head>
+<body>
+
+  <div class="updateTeam">
+    <h1 id="updateTitle"> Update Team </h1>
+  <form action="/updateTeam" method="POST">
+    Team Name:
+    <input type="text" name="name" 
+      value="<%=teamInfo[0].name%>">
+    <input type="text" name="userId" 
+      value="<%=teamInfo[0].userId%>">
+    <input type="text" name="size" 
+      value="<%=teamInfo[0].size%>">
+    <input type="hidden" name="teamId" 
+      value="<%=teamInfo[0].teamId%>">
+    <br>
+    <button> Update Team</button>
+  </form>
+  </div>
+</body>
+</html>

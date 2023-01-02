@@ -1,0 +1,28 @@
+<%- include("partials/adminMenu.ejs") %>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<title>Final Team Project</title>
+</head>
+<body>
+  <h1>User in Database</h1>
+
+  <%  for (i=0; i < users.length; i++) { %>
+    <div class="adminUser"> 
+      <h3 class="card-title" style="color:white">Username: <%= users[i].username %></h3>
+      <h3 class="card-title" style="color:white">User ID: <%= users[i].userId %> </h3>
+      <a href="/updateUsers?id=<%=users[i].userId%>" class="card-title" style="color:white">Update</a>
+      <a href="/deleteUsers?id=<%=users[i].userId%>" class="card-title" style="color:white">Delete</a>
+      <br>
+      <br>
+    </div>
+    <% } %>
+
+    
+</body>
+</html>

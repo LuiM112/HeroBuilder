@@ -1,0 +1,36 @@
+<%- include("partials/header.ejs") %>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Edit Team</title>
+  <link href="/css/style.css" rel="stylesheet"  />
+</head>
+<body>
+  <h1> Edit Team </h1>
+
+  <div id="heroInfo">
+    <% for(let i = 0; i < hero.length; i++) { %>
+      <div id="row">
+        <div id="info"><img id="heroImage" src="<%=hero[i].image.url%>">
+          <h2 id="heroName"><%=hero[i].name%></h2>
+        </div>
+        <div id="heroStats"><br><br>Combat:<%=hero[i].powerstats.combat%> Durability:<%=hero[i].powerstats.durability%> Intelligence:<%=hero[i].powerstats.intelligence%><br> Power:<%=hero[i].powerstats.power%> Speed:<%=hero[i].powerstats.speed%> Strength:<%=hero[i].powerstats.strength%>
+        </div>
+        <div id="option">
+          <br><br>
+          <a href="/removeHero?id=<%=hero[i].id%>&teamId=<%=teamInfo[0].teamId%>"><img src="/images/removePow.png" style="height:75px;"></a>
+        </div>
+      </div>
+      <br><br>
+    <% }%>
+      
+    <% if(teamInfo[0].size < 5) { %>
+      <a href="/getHero?id=<%=teamInfo[0].teamId%>"><img src="/images/addHeroPow.png" style="height:75px;"></a>
+    <% } %>
+    
+  </div>
+  
+</body>
+</html>

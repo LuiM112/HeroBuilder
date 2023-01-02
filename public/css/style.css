@@ -1,0 +1,199 @@
+body{
+  background-image: url('/images/Marvel-Vs.-DC.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+.header{
+  margin:auto;
+}
+
+.login,.createAccount,.updateUser{
+  text-align: center;
+  background-color: #FFA836;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: black;
+  margin-left: 12em;
+  margin-right: 10em;
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 2em;
+  border: 2px solid black;
+}
+
+.loginBtns{
+  background-color: #FF4F00;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.searchHero{
+  background-color: #FF4F00;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+h1{
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background-color: #E26310;
+  border: 2px solid black;
+  color: white;
+  font-weight: bold;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(100, 0, 0, 1) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 3%;
+  border-radius: 0.5em;
+}
+
+h3,h4{
+  color: #E26310;
+  background-color: black;
+  text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+nav{
+  display:flex;
+  justify-content: center;
+}
+
+.nav{
+/*   border-radius: 10px;
+  color:black;
+  background-color: #2774AE;
+  margin-left: 2em;
+  font-family: "Comic Sans MS", "Comic Sans", cursive; */
+  margin: 2px 2px 2px 2px;
+  padding-left: 2em;
+  color: white;
+  background-color:#2774AE;
+}
+
+p{
+  text-align:center;
+}
+
+label{
+  color:white;
+  background-color:black;
+}
+
+#createTeamBtn{
+  width:98px;
+}
+
+#createTeam{
+  color:red;
+  background-color: black;
+}
+
+#row{
+  display:flex;
+}
+
+#heroInfo{
+  background-color:white;
+  margin: 8em;
+  border-radius: 25px;
+}
+
+#heroImage {
+  height: 200px;
+}
+
+#heroStats{
+  text-align: center;
+  flex: 50%;
+  padding: 10px;
+  height: 100px;
+  font-size: 30px;
+}
+
+#option{
+  text-align: center;
+  flex: 25%;
+  padding: 10px;
+  height: 150px;
+  font-size: 30px;
+}
+
+#navi{
+  text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: black;
+}
+
+#search{
+  color:red;
+  text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: black; 
+}
+
+#heroName{
+  text-align: center;
+}
+
+#teamInfos{
+  display:flex;
+  text-align: center;
+  align-content: center;
+}
+
+#info{
+  text-align: center;
+  flex: 10%;
+  padding: 10px;
+}
+
+#updateTitle{
+  text-align:center;
+  
+}
+.card{
+  color: black;
+  background-color: #FFA836;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+}
+.card.bg-primary {
+  background-color: black;
+}
+#teamcard {
+  background-color: #FFA836;
+  color:black;
+  width:50%;
+}
+.adminUser,.updateTeam{
+  color: #FFA836;
+  background-color: black;
+  text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.footer{
+  color:white;
+  text-align:center
+}

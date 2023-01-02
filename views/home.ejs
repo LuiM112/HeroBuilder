@@ -1,0 +1,39 @@
+<%- include("partials/header.ejs") %>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<title>Final Team Project</title>
+</head>
+<body>
+  <div class="header">
+      <h1> Welcome to Hero Builder</h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">View All of Your Teams</h5>
+          <form action="/teams" method="GET">
+            <button class="btn btn-dark">View Teams</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Create a New Team</h5>
+          <form action="/createTeam" method="GET">
+            <button class="btn btn-dark">Create Team</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
